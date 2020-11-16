@@ -5,7 +5,11 @@ const CREATE_SCRIPT_TAG = gql`
     mutation scriptTagCreate($input: ScriptTagInput!){
         scriptTagCreate(input: $input){
             scriptTag {
-
+                id
+            }
+            userErrors {
+                field
+                message
             }
         }
     }
@@ -29,7 +33,7 @@ const DELETE_SCRIPT_TAG = gql`
     mutation scriptTagDelete($id: ID!){
         scriptTagDelete(id: $id){
             deletedScriptTagId
-            useErrors {
+            userErrors {
                 field
                 message
             }
