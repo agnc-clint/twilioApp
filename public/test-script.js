@@ -95,3 +95,5 @@ $("#div_id form").on('submit', function(e){
   // })
   // .catch(error => console.log("Error:",error))
 });
+
+console.log("running Sample")
