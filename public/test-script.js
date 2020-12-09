@@ -65,7 +65,7 @@ $("#div_id form").on('submit', function(e){
   let yourName = $("#yourName").val();
   let yourEmail = $("#yourEmail").val();
   $.ajax({
-    url: "https://cors-anywhere.herokuapp.com/https://smshint.mycustomsoftware.com/sending",
+    url: "https://cors-anywhere.herokuapp.com/https://caa8add195f9.ngrok.io/sending",
     method: 'POST',
     data:{
       repName,
