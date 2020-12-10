@@ -80,7 +80,6 @@ app.prepare().then(() => {
         ctx.cookies.set('shopOrigin', shop, {
             httpOnly: false,
             secure: true,
-            type:'text/javascript',
             sameSite: 'none'
         })
         ctx.redirect('/');
