@@ -34,6 +34,11 @@ const user = [
   }
 ];
 
+router.get('/', ctx => {
+  ctx.body = "Welcome"
+});
+
+
 router.get('/user/:id', ctx => {
   ctx.body = user[ctx.params.id];
   return user[ctx.params.id];
