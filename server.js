@@ -97,6 +97,6 @@ server.use(graphQLProxy({version: ApiVersion.October20}));
   });
 
   server.listen(port, () => {
-    console.log(`> Ready on http://localhost:${port}`);
+    console.log(`> Resady on http://localhost:${port}`);
   });
 });
