@@ -8,7 +8,7 @@
 
 # production
 /build
-/.next
+#/.next
 
 # misc Sa
 .DS_Store
