@@ -34,7 +34,7 @@ const user = [
   }
 ];
 
-router.get('/', ctx => {
+router.get('/auth', ctx => {
   ctx.body = "Welcome"
 });
 
