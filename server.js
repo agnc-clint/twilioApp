@@ -3,7 +3,7 @@ const Koa = require('koa');
 const KoaRouter = require('koa-router');
 const next = require('next');
 const dotenv = require('dotenv');
-const cors = require('cors');
+const cors = require('koa-cors');
 const session = require('koa-session');
 const { default: createShopifyAuth } = require('@shopify/koa-shopify-auth');
 const { verifyRequest } = require('@shopify/koa-shopify-auth');
@@ -24,7 +24,7 @@ const client = require('twilio')(accountSid, authToken);
 
 const { SHOPIFY_API_SECRET_KEY, SHOPIFY_API_KEY } = process.env;
 const server = new Koa();
-// server.use(cors());
+server.use(cors());
 const router = new KoaRouter();
 
 const bodyParser = require('koa-body')();
