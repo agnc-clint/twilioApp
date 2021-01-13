@@ -24,7 +24,7 @@ const client = require('twilio')(accountSid, authToken);
 
 const { SHOPIFY_API_SECRET_KEY, SHOPIFY_API_KEY } = process.env;
 const server = new Koa();
-server.use(cors());
+// server.use(cors());
 const router = new KoaRouter();
 
 const bodyParser = require('koa-body')();
